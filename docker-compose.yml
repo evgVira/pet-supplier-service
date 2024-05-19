@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  pet-supplier-service-db:
+    container_name: pet_supplier_service_db
+    image: postgres:15
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=pet_supplier_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
